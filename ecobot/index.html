@@ -38,8 +38,8 @@
     const flip = false; 
     webcam = new tmImage.Webcam(200, 200, flip);
     
-    await webcam.setup({ facingMode: { exact: "environment" } });
-    
+    // await webcam.setup({ facingMode: { exact: "environment" } });
+    await webcam.setup();
     await webcam.play();
     window.requestAnimationFrame(loop);
 
